@@ -4,43 +4,41 @@ body {
   padding: 0px;
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #1b2b59,
-    #393d7d,
-    #5c4ea0,
-    #845ec2
-  );
-  background-repeat: no-repeat;
+  background-color: #242424;
+  align-items: center;
 }
 .converterDiv {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #000;
-  color: #fff;
-  opacity: 0.5;
-  padding: 1rem;
-  width: 350px;
-  height: 300px;
-  gap: 10px;
-  color: var(--negro);
-  font-weight: 500;
-  margin-top: 100px;
-  left: auto;
-  right: auto;
-  box-shadow: 10px 9px 10px -6px rgba(0, 0, 0, 0.99);
-  -webkit-box-shadow: 10px 9px 10px -6px rgba(0, 0, 0, 0.99);
-  -moz-box-shadow: 10px 9px 10px -6px rgba(0, 0, 0, 0.99);
-  justify-items: center;
   text-align: center;
+  width: 60%;
+  height: 60%;
+  background: linear-gradient(#212121, #212121) padding-box,
+    linear-gradient(145deg, transparent 35%, #e81cff, #40c9ff) border-box;
+  border: 2px solid transparent;
+  padding: 32px 24px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
 }
+
 input {
   height: 25px;
   text-align: center;
   border: 1px solid black;
   align-self: center;
+  outline: none;
+  color: #fff;
+
+  background-color: #242424;
+  border-radius: 0.5rem;
+}
+input:focus {
+  border-color: #e81cff;
 }
 .converterTitle {
   text-justify: auto;
@@ -51,4 +49,8 @@ input {
 #resultType {
   border: 1px solid black;
   align-self: center;
+}
+select {
+  background-color: #242424;
+  color: #fff;
 }
